@@ -1,1 +1,1 @@
-document.getElementById("message").textContent = "hello dana";
+document.getElementById("message").textContent = "";
