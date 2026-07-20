@@ -194,10 +194,14 @@ body {
   width: 100%;
   max-width: 320px;
   height: auto;
+  cursor: pointer;
   filter:
     drop-shadow(0 16px 26px rgba(35, 38, 43, 0.22))
     drop-shadow(0 0 20px rgba(217, 154, 43, 0.18));
-  animation: twirl 12s ease-in-out infinite;
+}
+
+.ornament__img.is-spinning {
+  animation: spin 1.4s ease-in-out;
 }
 
 /* ---------- Motion ---------- */
@@ -211,13 +215,11 @@ body {
   }
 }
 
-@keyframes twirl {
-  0%,
-  7% {
+@keyframes spin {
+  from {
     transform: rotateY(0deg);
   }
-  18%,
-  100% {
+  to {
     transform: rotateY(720deg);
   }
 }

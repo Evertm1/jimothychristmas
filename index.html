@@ -48,5 +48,25 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      (function () {
+        var ornament = document.querySelector(".ornament__img");
+        if (!ornament) return;
+
+        function spin() {
+          ornament.classList.add("is-spinning");
+        }
+
+        ornament.addEventListener("click", spin);
+        ornament.addEventListener("animationend", function (e) {
+          if (e.animationName === "spin") {
+            ornament.classList.remove("is-spinning");
+          }
+        });
+
+        // Twirl once shortly after load, then it's click-triggered.
+        window.setTimeout(spin, 700);
+      })();
+    </script>
   </body>
 </html>
