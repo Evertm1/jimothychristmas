@@ -123,7 +123,7 @@ body {
   font-family: var(--display);
   font-optical-sizing: auto;
   font-weight: 600;
-  font-size: clamp(1.5rem, 7vw, 4.6rem);
+  font-size: clamp(1.1rem, 6vw, 4.6rem);
   line-height: 1.04;
   letter-spacing: -0.015em;
   color: var(--ink);
@@ -133,6 +133,10 @@ body {
 .accent {
   color: var(--emerald);
   text-shadow: 0 1px 12px rgba(31, 143, 99, 0.22);
+}
+
+.hero__line {
+  white-space: nowrap;
 }
 
 .hero__tagline {
@@ -241,7 +245,7 @@ a:focus-visible {
 
 @media (max-width: 480px) {
   .hero {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
