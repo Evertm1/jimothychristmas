@@ -180,18 +180,24 @@ body {
   animation: glowPulse 5.5s ease-in-out infinite;
 }
 
-.ornament__img {
+.ornament__swing {
   position: relative;
   z-index: 1;
+  display: block;
+  transform-origin: top center;
+  perspective: 900px;
+  animation: sway 6s ease-in-out infinite;
+}
+
+.ornament__img {
   display: block;
   width: 100%;
   max-width: 320px;
   height: auto;
-  transform-origin: top center;
   filter:
     drop-shadow(0 16px 26px rgba(35, 38, 43, 0.22))
     drop-shadow(0 0 20px rgba(217, 154, 43, 0.18));
-  animation: sway 6s ease-in-out infinite;
+  animation: twirl 12s ease-in-out infinite;
 }
 
 /* ---------- Motion ---------- */
@@ -202,6 +208,17 @@ body {
   }
   50% {
     transform: rotate(2.2deg);
+  }
+}
+
+@keyframes twirl {
+  0%,
+  7% {
+    transform: rotateY(0deg);
+  }
+  18%,
+  100% {
+    transform: rotateY(720deg);
   }
 }
 
