@@ -4,24 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jimothy Christmas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <a href="https://sedo.com/search/details/?domain=jimothychristmas.com&origin=domaindetails" target="_blank" rel="noopener noreferrer">
-        <button>Buy JimothyChristmas.com</button>
-      </a>
-      <a href="https://sedo.com/search/details/?domain=jimothycricket.com&origin=domaindetails" target="_blank" rel="noopener noreferrer">
-        <button>Buy JimothyCricket.com</button>
-      </a>
-    </div>
+    <header class="topbar">
+      <span class="brand">
+        <img class="brand__mark" src="jimothy-logo.png" alt="Jimothy logo" />
+        <span class="brand__word">Jimothy Christmas</span>
+      </span>
 
-    <h1>Ho Ho Ho! It's Jimothy Christmas!</h1>
-    <p>Coming soon...</p>
-    <p id="message"></p>
+      <nav class="topbar__links">
+        <a href="https://sedo.com/search/details/?domain=jimothychristmas.com&origin=domaindetails" target="_blank" rel="noopener noreferrer">
+          <button class="pill">Buy JimothyChristmas.com</button>
+        </a>
+        <a href="https://sedo.com/search/details/?domain=jimothycricket.com&origin=domaindetails" target="_blank" rel="noopener noreferrer">
+          <button class="pill">Buy JimothyCricket.com</button>
+        </a>
+      </nav>
+    </header>
 
-    <a href="https://live-production.wcms.abc-cdn.net.au/20bef573e36cc4d1305bfc14a937291d?impolicy=wcms_crop_resize&cropH=1067&cropW=800&xPos=0&yPos=67&width=862&height=1149" target="_blank" rel="noopener noreferrer">
-      <button>click here</button>
-    </a>
+    <main class="hero">
+      <p class="eyebrow">Handmade stained glass ornaments</p>
+      <h1 class="hero__title">Ho Ho Ho! It's <span class="accent">Jimothy</span> Christmas!</h1>
+      <p class="hero__tagline">Coming Soon...</p>
+      <p id="message" class="hero__message"></p>
+
+      <div class="ornament">
+        <img
+          src="Jimothy-glass1.png"
+          alt="A handmade stained glass Jimothy Christmas ornament"
+          class="ornament__img"
+        />
+      </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
